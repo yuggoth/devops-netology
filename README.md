@@ -22,3 +22,5 @@ override.tf.json
 # файлы .terraformrc и terraform.rc
 .terraformrc
 terraform.rc
+
+test

@@ -27,6 +27,7 @@
 		if (($? != 0))
 		then
 		date >> curl.log
+		else break
 		fi
 		sleep 60		
 		done

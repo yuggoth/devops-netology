@@ -15,16 +15,16 @@
 
 ## 2 задание
 
-##!/usr/bin/env python3
+    ##!/usr/bin/env python3
 
-import os
+    import os
 
-bash_command = ["cd ~/dev/sysadm-homeworks", "git status"]
-result_os = os.popen(' && '.join(bash_command)).read()
-for result in result_os.split('\n'):
-    if result.find('изменено') != -1:
-        prepare_result = result.replace('\tmodified:   ', '')
-        print(prepare_result)
+    bash_command = ["cd ~/dev/sysadm-homeworks", "git status"]
+    result_os = os.popen(' && '.join(bash_command)).read()
+    for result in result_os.split('\n'):
+        if result.find('изменено') != -1:
+            prepare_result = result.replace('\tmodified:   ', '')
+            print(prepare_result)
 
 
 1)break прерывает цикл for после первого нахождения, поэтому его надо убрать

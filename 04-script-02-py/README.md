@@ -15,6 +15,8 @@
 
 ## 2 задание
 
+##!/usr/bin/env python3
+
 import os
 
 bash_command = ["cd ~/dev/sysadm-homeworks", "git status"]

@@ -15,17 +15,20 @@
 
 ## 2 задание
 
-import os
+    ##!/usr/bin/env python3
 
-bash_command = ["cd ~/dev/sysadm-homeworks", "git status"]
-result_os = os.popen(' && '.join(bash_command)).read()
-for result in result_os.split('\n'):
-    if result.find('изменено') != -1:
-        prepare_result = result.replace('\tmodified:   ', '')
-        print(prepare_result)
+    import os
+
+    bash_command = ["cd ~/dev/sysadm-homeworks", "git status"]
+    result_os = os.popen(' && '.join(bash_command)).read()
+    for result in result_os.split('\n'):
+        if result.find('изменено') != -1:
+            prepare_result = result.replace('\tmodified:   ', '')
+            print(prepare_result)
 
 
 1)break прерывает цикл for после первого нахождения, поэтому его надо убрать
+
 2)is_change - переменная нигде не используется
 
 ## 3 задание
@@ -51,6 +54,7 @@ for result in result_os.split('\n'):
 		    print(url+' такого каталога нет') 
 
 добавила проверки на введение аргумента, является ли путь каталогом и является ли репозиторием. Результат:
+
 https://i2.paste.pics/1b69bbfa82d8bf4fecc7df9aff759502.png
 	
 ## 4 задание

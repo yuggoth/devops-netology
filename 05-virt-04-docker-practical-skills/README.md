@@ -44,18 +44,16 @@ https://hub.docker.com/repository/docker/yuggoth1/jen2
 Второй образ пока не хочет запускаться, вываливается ошибка:
 
 	FROM amazoncorretto
-	RUN yum clean all
-	RUN amazon-linux-extras install docker -y
 	RUN yum update -y
 	RUN yum install wget -y
 	RUN wget -O /etc/yum.repos.d/jenkins.repo \
 	    https://pkg.jenkins.io/redhat-stable/jenkins.repo
 	RUN rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 	RUN yum upgrade
-	RUN yum install jenkins java-1.8.0-openjdk-devel -y
+	RUN yum install jenkins -y
 	CMD ["/bin/bash"]
 
-
+![alt text](https://i2.paste.pics/1fe0d60b1a31575ba736dc4a8c3785a1.png)
 
 ## 3 задание
 

@@ -15,7 +15,7 @@
 
 Ссылка на репозиторий: https://hub.docker.com/repository/docker/yuggoth1/5.4-1
 
-(https://i2.paste.pics/da6a7617ed8d4be4dc00990c3f2cecf7.png)
+![alt text](https://i2.paste.pics/da6a7617ed8d4be4dc00990c3f2cecf7.png)
 
 
 ## 2 задание

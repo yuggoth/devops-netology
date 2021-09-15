@@ -20,7 +20,7 @@
 
 ## 2 задание
 
-Удалось запустить только один контейнер для ubuntu:
+Контейнер для ubuntu:
 
 	FROM ubuntu:latest
 	RUN apt-get update
@@ -41,11 +41,10 @@
 
 https://hub.docker.com/repository/docker/yuggoth1/jen2
 
-Второй образ пока не хочет запускаться, вываливается ошибка:
+Образ с amazoncorreto:
 
 	FROM amazoncorretto
-	RUN yum clean all
-	RUN amazon-linux-extras install docker -y
+	RUN amazon-linux-extras install epel -y
 	RUN yum update -y
 	RUN yum install wget -y
 	RUN wget -O /etc/yum.repos.d/jenkins.repo \
@@ -55,7 +54,10 @@ https://hub.docker.com/repository/docker/yuggoth1/jen2
 	RUN yum install jenkins java-1.8.0-openjdk-devel -y
 	CMD ["/bin/bash"]
 
+![alt text](https://i2.paste.pics/5dadec77d9fe368526983ba798b5bedb.png)
+![alt text](https://i2.paste.pics/1b0cd10416e43909655ed820b1f4b8f8.png)
 
+https://hub.docker.com/repository/docker/yuggoth1/jen1
 
 ## 3 задание
 

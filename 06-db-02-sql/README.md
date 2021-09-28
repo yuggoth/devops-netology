@@ -2,10 +2,10 @@
 
 ## 1 задание
 	
-	sudo docker pull postgres:12
-	sudo docker volume create volume1
-	sudo docker volume create volume2
-	sudo docker run --rm --name postgres -e POSTGRES_PASSWORD=password123 -ti -p 5000:5000 -v volume1:/var/lib/postgresql/data -v volume2:/var/lib/postgresql postgres:12
+	docker pull postgres:12
+	docker volume create volume1
+	docker volume create volume2
+	docker run --rm --name postgres -e POSTGRES_PASSWORD=password123 -ti -p 5000:5000 -v volume1:/var/lib/postgresql/data -v volume2:/var/lib/postgresql postgres:12
 
 ## 2 задание
 

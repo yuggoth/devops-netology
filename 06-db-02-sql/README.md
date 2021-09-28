@@ -43,3 +43,25 @@ SQL-запрос для выдачи списка пользователей с 
 Seq Scan - плохой знак, т.к. субд обходит все строки соединения в поисках нужных. В нашем случае он перебрал по 5 строк в каждой таблице  (actual time=0.016..0.020 rows=5 loops=1).
 
 Если таблицы будут большими, запрос будет выполняться долго, нужно создавать индексы на столбец с внешним ключом.
+
+
+## 6 задание
+
+Не уверена что правильно сделала.
+
+сделать дамп:
+
+	docker exec -t postgres pg_dump -U postgres test_db -f /var/lib/postgresql/data/dump_test.sql
+
+остановить контейнер:
+	
+	docker stop postgres
+	
+при этом на хостовой машине в папке /var/lib/docker/volumes/volume1/_data остался этот дамп
+потом запускаю новый конейнер:
+	
+	docker run --name postgres32 -e POSTGRES_PASSWORD=mysecretpassword -d -v volume1:/var/lib/postgresql/data postgres:12
+	
+захожу в него и там эта база уже есть:	
+	
+	docker exec -ti postgres32 bash

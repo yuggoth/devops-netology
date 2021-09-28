@@ -22,9 +22,7 @@
 
 ## 3 задание
 
-![alt text](https://i2.paste.pics/e74bddade25ffba592fcd416cc31386d.png)
-
-![alt text](https://i2.paste.pics/cdbae01e2d5cad1d1fd5baa7f657ad93.png)
+![alt text](https://i2.paste.pics/b5c2aeb3020cb51b8e2473d269336b89.png)
 
 ## 4 задание
 

@@ -58,6 +58,7 @@ Seq Scan - плохой знак, т.к. субд обходит все стро
 	docker stop postgres
 	
 при этом на хостовой машине в папке /var/lib/docker/volumes/volume1/_data остался этот дамп
+
 потом запускаю новый конейнер:
 	
 	docker run --name postgres32 -e POSTGRES_PASSWORD=mysecretpassword -d -v volume1:/var/lib/postgresql/data postgres:12

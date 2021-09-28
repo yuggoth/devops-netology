@@ -1,0 +1,41 @@
+# 6.2. SQL
+
+## 1 задание
+	
+	sudo docker pull postgres:12
+	sudo docker volume create volume1
+	sudo docker volume create volume2
+	sudo docker run --rm --name postgres -e POSTGRES_PASSWORD=password123 -ti -p 5000:5000 -v volume1:/var/lib/postgresql/data -v volume2:/var/lib/postgresql postgres:12
+
+## 2 задание
+
+![alt text](https://i2.paste.pics/3cd995bffe93d92eb3a397865c6be327.png)
+
+![alt text](https://i2.paste.pics/d275691005152a2294bf5caa0825625a.png)
+
+![alt text](https://i2.paste.pics/cb18d36a3f0d50307c06fec96e03f66a.png)
+
+![alt text](https://i2.paste.pics/615261373b57f24e5035f5db01eb874b.png)
+
+![alt text](https://i2.paste.pics/dd268999cd714c3279a56cbe4335b414.png)
+
+
+## 3 задание
+
+![alt text](https://i2.paste.pics/e74bddade25ffba592fcd416cc31386d.png)
+
+![alt text](https://i2.paste.pics/cdbae01e2d5cad1d1fd5baa7f657ad93.png)
+
+## 4 задание
+
+![alt text](https://i2.paste.pics/717c173973219547411515613af5ac16.png)
+
+## 5 задание
+
+![alt text](https://i2.paste.pics/88b8ad4b193111191427b236ee8f53da.png)
+
+Алгоритм Hash Join - неплохо, если таблицы большие и нет пригодного для использования индекса.
+
+Seq Scan - плохой знак, т.к. субд обходит все строки соединения в поисках нужных. В нашем случае он перебрал по 5 строк в каждой таблице  (actual time=0.016..0.020 rows=5 loops=1).
+
+Если таблицы будут большими, запрос будет выполняться долго, нужно создавать индексы на столбец с внешним ключом.

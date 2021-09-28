@@ -9,11 +9,17 @@
 
 ## 2 задание
 
+итоговый список БД после выполнения пунктов выше
+
 ![alt text](https://i2.paste.pics/3cd995bffe93d92eb3a397865c6be327.png)
+
+описание таблиц (describe)
 
 ![alt text](https://i2.paste.pics/d275691005152a2294bf5caa0825625a.png)
 
 ![alt text](https://i2.paste.pics/cb18d36a3f0d50307c06fec96e03f66a.png)
+
+SQL-запрос для выдачи списка пользователей с правами над таблицами test_db
 
 ![alt text](https://i2.paste.pics/615261373b57f24e5035f5db01eb874b.png)
 

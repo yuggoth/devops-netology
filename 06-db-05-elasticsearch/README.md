@@ -2,12 +2,12 @@
 
 ## 1 задание
 
-Создавала по этому докерфайлу:
-
 	FROM centos:7
 
 	RUN yum install java-11-openjdk -y \
-	    && yum install wget -y
+	    && yum install wget -y \
+	    && yum install systemd -y
+
 
 	RUN wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.15.1-x86_64.rpm \
 	    && wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.15.1-x86_64.rpm.sha512 \
@@ -15,6 +15,10 @@
 
 	RUN shasum -a 512 -c elasticsearch-7.15.1-x86_64.rpm.sha512 \ 
 	    && rpm --install elasticsearch-7.15.1-x86_64.rpm
+	    
+![alt text](https://i2.paste.pics/f1c408fcb4a6c0f8100669a0b7e6a64c.png)
+
+https://hub.docker.com/repository/docker/yuggoth1/homework-elastic
 
 
 ## 2 задание

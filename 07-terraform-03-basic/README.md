@@ -4,7 +4,7 @@
 
 ![alt text](https://i2.paste.pics/e2107d09a7acf5b8374512388177f423.png)
 
-main.tf c count. 
+Файл main.tf
 
 	provider "aws" {
 	  access_key = ""
